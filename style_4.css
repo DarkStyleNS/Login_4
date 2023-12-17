@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(52, 78, 107);
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box{
+    position: relative;
+    width: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.profil{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    color: white;
+    font-weight: 300;
+}
+
+.profil::before{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 2px;
+    background-color: white;
+    top: calc(10rem);
+}
+
+.profil::after{
+    content: "  Sign in  ";
+    position: absolute;
+    top: calc(8.5rem);
+    left:calc( 11.5rem) ;
+    font-size: 2.4rem;
+    background-color: rgb(52, 78, 107);
+}
+
+.body,form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+input#mail,#password{
+    width: calc(100% - 3rem);
+    height: 3rem;
+    background: none;
+    border: none;
+    outline: none;
+    padding: .5rem;
+    color: white;
+}
+
+label ion-icon{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.con{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem;
+}
+
+.con label{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    color: white;
+}
+
+.con label p{
+    margin-left: .3rem;
+    color: white;
+    font-size:1.4rem;
+}
+
+.con a{
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+.con a:hover{
+    color: darkcyan;
+}
+
+.footer{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    width: 100%;
+    height: 3rem;
+    background: none;
+    border: none;
+    background-color: white;
+    color: rgb(52, 78, 107);
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.text{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text p{
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .2rem;
+}
+
+.text a{
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    transition: all .3s;
+}
+
+.text a:hover{
+    color: darkcyan;
+}
+
+::placeholder{
+    color: white;
+    font-size: 1.4rem;
+}
